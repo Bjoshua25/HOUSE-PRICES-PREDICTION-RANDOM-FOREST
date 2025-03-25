@@ -1,6 +1,8 @@
 # **HOUSE PRICES PREDICTION | RANDOM FOREST**  
 *Ensemble Learning for Real Estate Valuation*  
 
+![](housing_cover.jpg)
+
 ## **INTRODUCTION**  
 Predicting house prices is a critical aspect of **real estate analysis**. This project applies **Random Forest Regression**, an ensemble learning technique, to predict house prices based on **lot size**.  
 
@@ -38,6 +40,8 @@ The dataset is sourced from [Explore-AI Public Data](https://raw.githubuserconte
 ## **EXPLORATORY DATA ANALYSIS (EDA)**  
 EDA was performed to **understand the relationship between lot area and house price**.  
 
+![](scatter_plot.png)
+
 ### **1. Data Overview**  
 - **Checked dataset structure** using `.info()` and `.describe()`.  
 - **Handled missing values** and outliers.  
@@ -73,6 +77,8 @@ from sklearn.ensemble import RandomForestRegressor
 rf_model = RandomForestRegressor(n_estimators=100, random_state=42)
 rf_model.fit(X_train, y_train)
 ```
+
+![](hyperparameter_tuning.png)
 
 ### **2. Model Evaluation**  
 - **Mean Squared Error (MSE)**  
